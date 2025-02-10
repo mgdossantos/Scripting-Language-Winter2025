@@ -15,11 +15,6 @@
 # Starter Code:
 # Provide this starter code to help them begin:
 
-# Solution for the Treasure Hunt Exercise
-def display_grid(grid):
-    for row in grid:
-        print(" ".join(row))
-    print("\n")
 
 # Grid setup (5x5 grid)
 grid = [
