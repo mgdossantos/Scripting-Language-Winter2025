@@ -6,18 +6,18 @@ student = {
 }
 
 # Get all keys
-#print(student.keys())
+print(student.keys())
 
 # Get all values
-#print(student.values())
+print(student.values())
 
 # Get all key-value pairs
-#print(student.items())
+print(student.items())
 
 # Check if a key exists
-#print("GPA" in student)  # Output: True
+print("GPA" in student)  # Output: True
 
 #Looping Through a Dictionary
 
-#for key, value in student.items():
-#    print(f"{key}: {value}")
+for key, value in student.items():
+   print(f"{key}: {value}")
