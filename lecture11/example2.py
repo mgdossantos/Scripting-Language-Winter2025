@@ -13,18 +13,18 @@ employee = dict(name="Alice", position="Manager", salary=60000)
 print(student["name"])  # Output: Marcela
 print(employee["salary"])  # Output: 60000
 print(student)
-# Adding a new key-value pair
+# # Adding a new key-value pair
 student["GPA"] = 3.8
 
 print(student)
-
-
-# Updating an existing key-value pair
+#
+#
+# # Updating an existing key-value pair
 student["age"] = 26
 print(student)
-
-#print(student)  # Output: {'name': 'Marcela', 'age': 26, 'major': 'Computer Engineer', 'GPA': 3.8}
-
+#
+# #print(student)  # Output: {'name': 'Marcela', 'age': 26, 'major': 'Computer Engineer', 'GPA': 3.8}
+#
 # Removing Elements
 
 del student["major"]  # Removes 'major' key

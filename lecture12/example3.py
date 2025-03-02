@@ -1,13 +1,24 @@
-file = open("../../lecture12/sample.txt", "w")
-file.write("Hello, Python!")
-file.close()
+#file = open("sample.txt", "w")
+#file.write("Hello, Python!")
+#file.close()
 
-with open("../../lecture12/sample.txt", "r") as file:
-    print(file.read())  # Reads the whole
+with open("sample.txt", "w") as file:
+    file.write("This is a new file. ")
 
-with open("../../lecture12/sample.txt", "w") as file:
-    file.write("This will replace the existing content.\n")
+with open("sample.txt", "w") as file:
+    file.write("This line delete the content before. ")
 
+with open("sample.txt", "a") as file:
+    file.write("This is an additional text.")
 
-with open("../../lecture12/sample.txt", "a") as file:
-    file.write("This is a new line added.\n")
+with open("sample.txt", "a") as file:
+    file.write("\nThis is an additional line.")
+
+with open("sample.txt", "r") as file:
+    content = file.read()
+    print(content)
+
+with open("sample.txt", "r") as file:
+    for line in file:
+        print(line.strip())
+        print("*")

@@ -1,0 +1,2 @@
+This line delete the content before. This is an additional text.
+This is an additional line.
