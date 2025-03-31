@@ -1,3 +1,6 @@
+with open("sample.txt", "a") as f:
+    f.write("\nat College Lasalle ")
+
 print("\n ** Using read ***")
 with open("sample.txt", "r") as file:
     content = file.read()  # Reads the whole file
@@ -9,8 +12,14 @@ with open("sample.txt", "r") as file:
     second_line = file.readline()  # Reads the next line
     print(first_line)
     print(second_line)
-
-print("\n ** Using readline ***")
+print("\n ** Using readline2 ***")
+with open("sample.txt", "r") as file:
+    line = file.readline()
+    while line:
+        print(line)
+        line= file.readline()
+#
+print("\n ** Using readlines ***")
 with open("sample.txt", "r") as file:
     lines = file.readlines()  # Reads all lines and stores them in a list
     print(lines)
