@@ -11,3 +11,8 @@ class TaskManager:
 
     def list_tasks(self):
         return self.tasks
+
+    def clear_all_tasks(self):
+        """Clear all tasks from the manager"""
+        self.tasks.clear()
+        print("All tasks have been cleared.")
